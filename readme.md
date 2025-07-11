@@ -182,7 +182,7 @@ humblyRequest print(linearSearch(3));
 thanks
 ```
 
-##Code
+## Code
 
 # Since its interpreter is built with Python you can use regular Python code with a few adjustments:
 - All variable declarations must begin with const or let
