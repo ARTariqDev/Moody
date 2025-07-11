@@ -1,0 +1,4 @@
+threaten def attack(target) {
+    threaten print("You’re next, " + target);
+}
+thanks
