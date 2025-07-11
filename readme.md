@@ -193,3 +193,30 @@ thanks
 - use **humblyRequest** before calling any functions
 - Lastly, don't overuse keywords in your code!
 
+heres another sample with most of these features demonstrated:
+```Moody
+beg def square(x) {
+    request(x * x);
+}
+
+prettyPlease def double(x) {
+    request(x + x);
+}
+
+plead def printResult(value) {
+    humblyRequest print("The result is: " + str(value));
+}
+
+beg def main() {
+    let num = 7;
+    let sq = humblyRequest square(num);
+    let dbl = humblyRequest double(num);
+    
+    humblyRequest printResult(sq);
+    humblyRequest printResult(dbl);
+}
+
+humblyRequest main();
+thanks
+```
+
