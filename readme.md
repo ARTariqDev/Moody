@@ -15,6 +15,45 @@ pip install moodylang==0.1.0
 moodyLang [file name].moody
 ```
 
+## Code
+
+# Since its interpreter is built with Python you can use regular Python code with a few adjustments:
+- All variable declarations must begin with const or let
+- Use Curly braces syntax and semicolons
+- Every line must have one of the keywords
+- use the **thanks** keyword to end your code
+- return statements become request/hanover/send statements
+- use **humblyRequest** before calling any functions
+- Lastly, don't overuse keywords in your code!
+
+heres another sample with most of these features demonstrated:
+```Moody
+beg def square(x) {
+    request(x * x);
+}
+
+prettyPlease def double(x) {
+    request(x + x);
+}
+
+plead def printResult(value) {
+    humblyRequest print("The result is: " + str(value));
+}
+
+beg def main() {
+    let num = 7;
+    let sq = humblyRequest square(num);
+    let dbl = humblyRequest double(num);
+    
+    humblyRequest printResult(sq);
+    humblyRequest printResult(dbl);
+}
+
+humblyRequest main();
+thanks
+```
+
+
 ## Features
 
 - Custom syntax influenced by JavaScript and Python.
@@ -104,40 +143,3 @@ thanks
 
 ```
 
-## Code
-
-# Since its interpreter is built with Python you can use regular Python code with a few adjustments:
-- All variable declarations must begin with const or let
-- Use Curly braces syntax and semicolons
-- Every line must have one of the keywords
-- use the **thanks** keyword to end your code
-- return statements become request/hanover/send statements
-- use **humblyRequest** before calling any functions
-- Lastly, don't overuse keywords in your code!
-
-heres another sample with most of these features demonstrated:
-```Moody
-beg def square(x) {
-    request(x * x);
-}
-
-prettyPlease def double(x) {
-    request(x + x);
-}
-
-plead def printResult(value) {
-    humblyRequest print("The result is: " + str(value));
-}
-
-beg def main() {
-    let num = 7;
-    let sq = humblyRequest square(num);
-    let dbl = humblyRequest double(num);
-    
-    humblyRequest printResult(sq);
-    humblyRequest printResult(dbl);
-}
-
-humblyRequest main();
-thanks
-```
