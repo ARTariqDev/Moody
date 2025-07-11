@@ -1,4 +1,7 @@
 threaten def attack(target) {
     threaten print("You’re next, " + target);
+    handover 1;
+
 }
+beg print(humblyRequest attack("compiler"));
 thanks

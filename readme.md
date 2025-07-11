@@ -2,40 +2,89 @@
 
 **Moody* is a playful, tone-sensitive programming language that only compiles your code if you’re polite enough. It supports basic control structures, recursion, and even enforces good manners through tone analysis.
 
-## Features
 
-- Moody keywords like `beg`, `plead`, `request`, `thanks`, `threaten`, and more
-- Custom tone analysis (you must be polite to compile)
-- Basic programming constructs: functions, variables, loops, conditionals
-- Support for recursion and nested scopes
-- Transpiles MoodyLang to Python and runs the result
+## ✅ Features
 
-## Tone Rules
+- Custom syntax influenced by JavaScript and Python.
+- Mood-based keywords: Good, Neutral, Bad — each affects your "tone score".
+- Will **refuse to compile** if you're rude, impolite, or forget to say `thanks`.
+- Supports:
+  - Variable declarations (`let`, `const`)
+  - Functions (`beg def myFunc() { ... }`)
+  - Conditionals (`listen if`)
+  - Loops (`plead while`)
+  - Recursion
+  - Polite `return` statements (`request`)
+  - Tone-based printing (`humblyRequest`, `send`, `handover`)
+- Interactive Interpreter: `python moody.py -i`
 
-To successfully compile:
+---
 
-- At least **3 polite ("good") keywords** must be used
-- Overall tone score must be **≥ 6**
-- Saying `thanks` is **mandatory**
-- Overuse of any one keyword is discouraged and may throw errors
+## 💬 Tone Keywords
 
-### Keyword Categories
+### Good (Boosts score, required):
+- `beg`
+- `prettyPlease`
+- `plead`
+- `request` → becomes `return`
+- `thanks`
+- `humblyRequest` → `print(...)`
 
-- **GOOD:** `beg`, `prettyPlease`, `plead`, `request`, `thanks`
-- **NEUTRAL:** `hey`, `sup`, `listen`, `yo`, `btw`, `proceed`
-- **BAD:** `youBetter`, `dare`, `threaten`, `submit`, `now`
+Limit: 2 uses per keyword.
 
-## Example MoodyLang Code
+### Neutral (No impact, but limited):
+- `hey`
+- `sup`
+- `listen`
+- `yo`
+- `btw`
+- `proceed`
+- `send` → `print(...)`
+
+Limit: 1 use per keyword.
+
+### Bad (Reduces tone score):
+- `youBetter`
+- `dare`
+- `threaten`
+- `submit`
+- `now`
+- `handover` → `print(...)`
+
+Limit: 5 uses per keyword.
+
+---
+
+## ❗ Tone Rules
+
+Your MoodyLang code **must**:
+- Use **at least 3 good keywords**.
+- Maintain a **minimum tone score of 6**.
+- Include a **`thanks`** before finishing.
+
+Violating these will result in:
+- `FixYourAttitudeError`
+- `CompilerIsCryingError`
+- `GratitudeException`
+
+Multiple errors can occur simultaneously.
+
+---
+
+## 📄 Example: Polite Search
 
 ```moody
-beg def factorial(n) {
-    listen if (n == 0) {
-        request 1;
+beg def linearSearch(n) {
+    yo let i = 0;
+    plead while (i < len(arr)) {
+        listen if (arr[i] == n) {
+            request i;
+        }
+        plead i = i + 1;
     }
-    plead request n * factorial(n - 1);
+    beg request -1;
 }
 
-yo const x = 5;
-humblyRequest print(factorial(x));
+hey const arr = [1, 2, 3, 4];
+humblyRequest print(linearSearch(3));
 thanks
-# Moody
