@@ -14,6 +14,7 @@ pip install moodylang==0.1.0
 ```Moody
 moodyLang [file name].moody
 ```
+---
 
 # Code
 
@@ -54,20 +55,6 @@ thanks
 ```
 
 
-## Features
-
-- Custom syntax influenced by JavaScript and Python.
-- Mood-based keywords: Good, Neutral, Bad — each affects your "tone score".
-- Will **refuse to compile** if you're rude, impolite, or forget to say `thanks`.
-- Supports:
-  - Variable declarations (`let`, `const`)
-  - Functions (`beg def myFunc() { ... }`)
-  - Conditionals (`listen if`)
-  - Loops (`plead while`)
-  - Recursion
-  - Polite `return` statements (`request`)
-  - Tone-based printing (`humblyRequest`, `send`, `handover`)
-- Interactive Interpreter: `python moody.py -i`
 
 ---
 
