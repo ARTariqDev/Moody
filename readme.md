@@ -2,6 +2,18 @@
 
 **Moody* is a playful, tone-sensitive programming language that only compiles your code if you’re polite enough. It supports basic control structures, recursion, and even enforces good manners through tone analysis.
 
+##Installating and Executing Moody Code
+
+- First download the MoodyLang Pckage from PyPi
+
+```Moody
+pip install moodylang==0.1.0
+```
+- Then create a new .moody file and run it as shown below
+  
+```Moody
+moodyLang [file name].moody
+```
 
 ## ✅ Features
 
@@ -219,4 +231,3 @@ beg def main() {
 humblyRequest main();
 thanks
 ```
-
