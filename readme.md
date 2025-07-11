@@ -15,9 +15,9 @@ pip install moodylang==0.1.0
 moodyLang [file name].moody
 ```
 
-## Code
+# Code
 
-# Since its interpreter is built with Python you can use regular Python code with a few adjustments:
+## Since its interpreter is built with Python you can use regular Python code with a few adjustments:
 - All variable declarations must begin with const or let
 - Use Curly braces syntax and semicolons
 - Every line must have one of the keywords
