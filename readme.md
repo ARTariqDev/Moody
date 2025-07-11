@@ -180,6 +180,7 @@ beg def linearSearch(n) {
 hey const arr = [1, 2, 3, 4];
 humblyRequest print(linearSearch(3));
 thanks
+```
 
 ##Code
 
