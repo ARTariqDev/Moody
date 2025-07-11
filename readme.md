@@ -15,7 +15,7 @@ pip install moodylang==0.1.0
 moodyLang [file name].moody
 ```
 
-## ✅ Features
+## Features
 
 - Custom syntax influenced by JavaScript and Python.
 - Mood-based keywords: Good, Neutral, Bad — each affects your "tone score".
@@ -32,7 +32,7 @@ moodyLang [file name].moody
 
 ---
 
-## 💬 Tone Keywords
+## Tone Keywords
 
 ### Good (Boosts score, required):
 - `beg`
@@ -67,7 +67,7 @@ Limit: 5 uses per keyword.
 
 ---
 
-## ❗ Tone Rules
+## Tone Rules
 
 Your MoodyLang code **must**:
 - Use **at least 3 good keywords**.
@@ -83,7 +83,7 @@ Multiple errors can occur simultaneously.
 
 ---
 
-## 📄 Example: Polite Search
+## Example: Polite Search
 
 ```moody
 beg def linearSearch(n) {
@@ -107,7 +107,7 @@ thanks
 **Moody* is a playful, tone-sensitive programming language that only compiles your code if you’re polite enough. It supports basic control structures, recursion, and even enforces good manners through tone analysis.
 
 
-## ✅ Features
+## Features
 
 - Custom syntax influenced by JavaScript and Python.
 - Mood-based keywords: Good, Neutral, Bad — each affects your "tone score".
@@ -124,7 +124,7 @@ thanks
 
 ---
 
-## 💬 Tone Keywords
+## Tone Keywords
 
 ### Good (Boosts score, required):
 - `beg`
@@ -159,7 +159,7 @@ Limit: 5 uses per keyword.
 
 ---
 
-## ❗ Tone Rules
+## Tone Rules
 
 Your MoodyLang code **must**:
 - Use **at least 3 good keywords**.
@@ -175,7 +175,7 @@ Multiple errors can occur simultaneously.
 
 ---
 
-## 📄 Example: Polite Search
+## Example: Polite Search
 
 ```moody
 beg def linearSearch(n) {
