@@ -1,3 +1,13 @@
+Metadata-Version: 2.1
+Name: moodylang
+Version: 0.1.0
+Summary: A polite emotional programming language interpreter
+Author: Your Name
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
 # Moody , beg to compile your code! (or don't and watch the compiler cry)
 
 **Moody* is a playful, tone-sensitive programming language that only compiles your code if you’re polite enough. It supports basic control structures, recursion, and even enforces good manners through tone analysis.

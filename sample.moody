@@ -1,7 +1,3 @@
-threaten def attack(target) {
-    threaten print("You’re next, " + target);
-    handover 1;
-
-}
-beg print(humblyRequest attack("compiler"));
+prettyPlease let x = 3;
+beg print(x);
 thanks

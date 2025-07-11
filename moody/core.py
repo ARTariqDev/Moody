@@ -217,29 +217,3 @@ def interactive_interpreter():
         except EOFError:
             print("\nGoodbye! 👋")
             break
-
-if __name__ == "__main__":
-    # Check for interactive mode
-    if len(sys.argv) == 2 and sys.argv[1] == "-i":
-        interactive_interpreter()
-        sys.exit(0)
-    
-    debug_mode = False
-    if len(sys.argv) < 2:
-        print("Usage: python moody.py <file.moody> [-d] | python moody.py -i")
-        sys.exit(1)
-    if "-d" in sys.argv:
-        debug_mode = True
-        sys.argv.remove("-d")
-    if len(sys.argv) != 2:
-        print("Usage: python moody.py <file.moody> [-d] | python moody.py -i")
-        sys.exit(1)
-    
-    if not sys.argv[1].endswith(".moody"):
-        print("Usage: python moody.py <file.moody> [-d] | python moody.py -i")
-        sys.exit(1)
-
-    with open(sys.argv[1], 'r') as f:
-        code = f.readlines()
-    result = run_moodylang(code, debug=debug_mode)
-    print(result)
